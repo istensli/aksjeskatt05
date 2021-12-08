@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Aksjeskatt</title>
+    <script src="aksjeskatt.js"></script>
+    <link href="aksjeskatt.css" type="text/css" rel="stylesheet" />
+    <style>
+    </style>
+    
+</head>
+<body>
+
+    <div class="page" id="page">
+        <div class="innhold" id="innhold">
+            <button class="visLeggTil" onclick="visInndata()">Vis/skjul legg til data...</button>
+            <button class="slettData" onclick="slettData()">Slett data...</button>
+            <hr>
+            <p>Dette programmet regner ut realisert avkastning p&aring; aksjer realisert etter <br>
+            F&oslash;rst Inn F&oslash;rst Ut - prinsippet etter skatteloven &sect;10-36.<br>
+            Regn ut for en type aksje av gangen. Angi beløp i kroner(NOK).</p>
+            <hr>
+            <p>Last inn eventuelle urealiserte aksjer:</p>
+            <input type="file" id="opplasting" onchange="hentAksjer()" />
+            <hr>
+            <p>&nbsp &nbsp</p>
+            <div class="inndata" id="inndata"></div>
+            <div class="kjopsdata" id="kjopsdata"></div>
+            <div class="salgsdata" id="salgsdata"></div>
+           
+            <div class="avkastningsdata" id="avkastningsdata">
+                <h3>Avkastning:</h3>
+                <button class="kalkulerAvkastning" onclick="visAvkastning()">Kalkuler avkastning</button>
+                <div class="avkastning" id="avkastning"></div>    
+            </div>
+            <div class="urealiserteData" id="urealiserteData"></div>
+            <div class="skattData" id="skattData"></div>
+        </div>
+        
+            
+
+        
+    </div>
+
+    <script>
+    
+    </script>
+
+</body>
+</html>
