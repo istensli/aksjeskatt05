@@ -16,7 +16,7 @@ var urealiserteObj = {
 
 };
 
-
+/*denne funksjonen er ute av bruk*/
 function visInndata(){
     var html = `<p><h3>Kj&oslash;p:</h3></p> <table>
     <tr><td>Antall:</td><td>Kurs:</td><td>Kurtasje:</td>
@@ -239,6 +239,10 @@ function visAvkastning(){
 
     if(avkastning < 0){
         html += `<p>DU HAR NEGATIV AVKASTNING!</p>`;
+        document.getElementById('avkastning').style.color = "red";
+    }
+    else{
+        document.getElementById('avkastning').style.color = "black";
     }    
         
     

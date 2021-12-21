@@ -13,18 +13,64 @@
 
     <div class="page" id="page">
         <div class="innhold" id="innhold">
-            <button class="visLeggTil" onclick="visInndata()">Vis/skjul legg til data...</button>
+            
             <button class="slettData" onclick="slettData()">Slett data...</button>
             <hr>
             <p>Dette programmet regner ut realisert avkastning p&aring; aksjer realisert etter <br>
             F&oslash;rst Inn F&oslash;rst Ut - prinsippet etter skatteloven &sect;10-36.<br>
             Regn ut for en type aksje av gangen. Angi beløp i kroner(NOK).</p>
             <hr>
-            <p>Last inn eventuelle urealiserte aksjer:</p>
+            <p>Last inn eventuelle urealiserte aksjer fra i fjor:</p>
             <input type="file" id="opplasting" onchange="hentAksjer()" />
             <hr>
             <p>&nbsp &nbsp</p>
-            <div class="inndata" id="inndata"></div>
+            <div class="inndata" id="inndata">
+                <p><h3>Kj&oslash;p:</h3></p> <table>
+                    <tr><td>Antall:</td><td>Kurs:</td><td>Kurtasje:</td>
+                    </tr>
+                    <tr>
+                    <td colspan="1">
+                        <input size="6" type="text" id="kjopsAntall"/>
+                    </td>
+                    <td colspan="1">  
+                        <input size="6" type="text" id="kjopsKurs"/>
+                    </td>
+                    <td colspan="1">   
+                        <input size="6" type="text" id="kjopsKurtasje"/>
+                    </td>
+                        <td colspan="1"><button class="leggTilKnapp" onclick="leggTilKjopsData()">legg til data</button>
+                    </td>  
+                      
+                    
+                    </tr>
+                    
+                    <tr><td>&nbsp;</td></tr>
+                    </table>
+                    
+                    <p><h3>Salg:</h3></p>
+                
+                    <table>
+                    <tr><td>Antall:</td><td>Kurs:</td><td>Kurtasje:</td>
+                    </tr>
+                    <tr>
+                    <td colspan="1">
+                        <input size="6" type="text" id="salgsAntall"/>
+                    </td>
+                    <td colspan="1">  
+                        <input size="6" type="text" id="salgsKurs"/>
+                    </td>
+                    <td colspan="1">   
+                        <input size="6" type="text" id="salgsKurtasje"/>
+                    </td>
+                        <td colspan="1"><button class="leggTilnKnapp" onclick="leggTilSalgsData()">legg til data</button>
+                    </td>  
+                      
+                    
+                    </tr>
+                    
+                    <tr><td>&nbsp;</td></tr>
+                    </table>
+            </div>
             <div class="kjopsdata" id="kjopsdata"></div>
             <div class="salgsdata" id="salgsdata"></div>
            
