@@ -5,62 +5,55 @@
 
 body {
     font-family: Arial, Verdana, sans-serif;
+    margin-left: 20px;
+    padding: 0;
+
+    background-color: white;
+    
+    margin-right: 20px;
     
 
 }
 
-div.page {
-    float: left;
-    /*width: 450px;*/
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid blue;
-}
+
 
 div.innhold {
-    float: left;
-    /*width: 400px;*/
-    margin: 10px;
-    padding: 20px;
-    border: 2px solid blue;
+    display: grid;
+    /*background-color: lightblue;*/
+    height: 100vh;
+          
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-.visLeggTil {
-    left: 100px;
-    width: 250px;
+div.overst {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    
 }
 
-div.inndata {
-    /*border-collapse: collapse;*/
-    height: 300px;
-
-    float: left;
-    width: 350px;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid blue;
-
-}
-
-div.kjopsdata, div.salgsdata {
+div.nederst {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    
+} 
 
 
-    /*position: absolute;
-    top: 0px;*/
-    /*left: 500px;*/
-    max-height: 300px;
+
+
+
+
+/*div.kjopsdata, div.salgsdata {
+
+
+    
+    
     overflow: scroll;
 
-    max-width: 350px;
-    float: left;
-    width: 350px;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid blue;
+    
 
-}
+}*/
 
-div.avkastningsdata {
+/*div.avkastningsdata {
 
 
     max-height: 300px;
@@ -68,26 +61,22 @@ div.avkastningsdata {
     clear: left;
     float: left;
     width: 350px;
-    /*margin: 10px;*/
+    
     margin: 10px;
     padding: 10px;
     border: 2px solid blue;
 
-}
+}*/
 
-div.urealiserteData {
+/*div.urealiserteData {
 
-    max-height: 300px;
+    
     
 
     overflow: scroll;
-    float: left;
-    width: 350px;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid blue;
+    
 
-}
+}*/
 
 tr:nth-child(even) {
     background: lightblue;
@@ -119,15 +108,5 @@ tr:nth-child(even) {
 
 
 
-body{
-    background-color: lightblue;
-    
-    margin-right: 20px;
-}
 
-.page {
-    background-color: white;
-   
-    
 
-}

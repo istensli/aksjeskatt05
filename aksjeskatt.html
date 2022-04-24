@@ -13,8 +13,9 @@
 
     <div class="page" id="page">
         <div class="innhold" id="innhold">
-            
-            <button class="slettData" onclick="slettData()">Slett data...</button>
+
+            <div class="topp">
+            <button class="slettData" onclick="slettData()">Slett data</button>
             <hr>
             <p>Dette programmet regner ut realisert avkastning p&aring; aksjer realisert etter <br>
             F&oslash;rst Inn F&oslash;rst Ut - prinsippet etter skatteloven &sect;10-36.<br>
@@ -24,6 +25,10 @@
             <input type="file" id="opplasting" onchange="hentAksjer()" />
             <hr>
             <p>&nbsp &nbsp</p>
+            
+            </div>
+
+            <div class="overst">
             <div class="inndata" id="inndata">
                 <p><h3>Kj&oslash;p:</h3></p> <table>
                     <tr><td>Antall:</td><td>Kurs:</td><td>Kurtasje:</td>
@@ -73,14 +78,18 @@
             </div>
             <div class="kjopsdata" id="kjopsdata"></div>
             <div class="salgsdata" id="salgsdata"></div>
-           
+            </div>
+
+           <div class="nederst">
             <div class="avkastningsdata" id="avkastningsdata">
                 <h3>Avkastning:</h3>
                 <button class="kalkulerAvkastning" onclick="visAvkastning()">Kalkuler avkastning</button>
                 <div class="avkastning" id="avkastning"></div>    
             </div>
             <div class="urealiserteData" id="urealiserteData"></div>
-            <div class="skattData" id="skattData"></div>
+            <div class="tomDiv"></div>
+            </div>
+           
         </div>
         
             
